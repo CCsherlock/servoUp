@@ -20,6 +20,17 @@
             ],
             "group": "build",
             "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: 清理重新生成",
+            "command": "cleanRebuild",
+            "targets": [
+                "all"
+            ],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake 模板 清理重新生成 任务"
         }
     ],
     "version": "2.0.0"

@@ -63,9 +63,6 @@ bool SerialInterface::openSyn(string serial_name, DWORD baud_rate, unsigned char
         setSerialLastError("SerialInterface::open() : SetCommTimeouts Error");
         return false;
     }
-
-
-
     //清空缓冲区，为读写串口做准备
     if (false == PurgeComm(hCom, PURGE_TXCLEAR | PURGE_RXCLEAR | PURGE_TXABORT | PURGE_RXABORT))
     {

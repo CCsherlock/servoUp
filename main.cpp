@@ -6,7 +6,7 @@ SerialInterface serial;
 
 struct servoSendStr
 {
-    /* data */
+    // /* data */
     uint8_t frameHead = 0xA5;
     uint8_t servoCmd[14];
     uint8_t frameCheck;
